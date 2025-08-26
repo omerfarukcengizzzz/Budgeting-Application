@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 13, 110, 253;
+  --bs-primary-rgb: 246, 245, 243;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -3166,6 +3166,17 @@ textarea.form-control-lg {
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
   --bs-btn-border-radius: 0.25rem;
+}
+
+.btn-custom {
+  background-color: #929A68;
+  color: #fff; /* keeps text readable */
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #5a622f; /* slightly darker on hover */
+  color: #fff;
 }
 
 .fade {
