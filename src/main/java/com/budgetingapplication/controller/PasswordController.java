@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class PasswordController {
-    @GetMapping("/password.html")
+    @GetMapping("/password")
     public String password() {
         return "password";
     }
