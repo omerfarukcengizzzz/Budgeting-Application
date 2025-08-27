@@ -12,13 +12,24 @@
         <h1 th:text="${message}">default text</h1>
     </div>
 
-    <div>
+    <div th:each="letter : ${letters}">
         <ul>
-            <li>
-
-            </li>
+            <li th:text="${letter}"/>
         </ul>
     </div>
+
+
+    <form method="POST" th:object="${user}">
+
+        <div>
+            <label for="username">Name</label>
+        </div>
+        <input type="text" th:field="*{username}" id="username" />
+
+
+        <input type="submit" value="Submit" />
+
+    </form>
 
 </body>
 
